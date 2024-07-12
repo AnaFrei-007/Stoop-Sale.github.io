@@ -60,7 +60,7 @@ document.getElementById('chalkboard').addEventListener('click', loadChalkboardDe
 // Function to load chalkboard details
 function loadChalkboardDetails(){
     document.body.classList.add('chalk-details');
-    document.body.innerHTML = '<img src = "./assets/images/Chalkboardanimated.png" alt = "chalkboard" class = "background"> <div id = "back-button-chalk"> </div>';
+    document.body.innerHTML = '<div class="container-img" id="back-button"><img src="./assets/images/Chalkbutton.png" class="content-img" alt="Back"></div><img src = "./assets/images/Chalkboard.png" alt = "chalkboard" class = "background"> <div id = "back-button-chalk"> </div>';
 
     // Add event listener to back button
     document.getElementById('back-button-chalk').addEventListener('click', function() {
