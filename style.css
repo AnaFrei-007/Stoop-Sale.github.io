@@ -1,0 +1,307 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(162, 237, 255, 0.5);
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 15%;
+    font-family: "Arvo", cursive; /*"Permanent Marker" font also available*/
+    font-style: normal;
+    color:  #ffa2a2;
+    text-shadow: 2px 2px 0px #FF0000;
+}
+
+p{
+    color: #ffb5a2;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Arvo", serif;
+    font-style: normal;
+    text-shadow: 1px 1px 0px #d65d51;
+}
+
+/*---- BACKGROUND IMAGE ----*/
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: 150px;
+    background-position: center;
+    z-index: 1;
+  }
+
+.background img{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+/*---- FLEX CONTAINER ----*/
+.container {
+    display: flex;
+    flex-direction: row;
+    min-height:100vh;
+    max-width: 100vw;
+    z-index: 999;
+    position: absolute;
+    right: 0; /*made the container take up the entire page*/
+    left: 0; /*made the container take up the entire page*/
+    top: 0;
+}
+.column {
+    flex: 1;
+    margin: none;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height: auto;
+    object-fit: contain;
+    padding: 0px 0px 0px 0px;
+} 
+
+/*----- LEFT COLUMN -----*/
+.column.left{
+    display:inline-flex;
+    justify-content:flex-start;
+    flex-direction:column;
+    align-items:flex-start;
+    z-index: 999;
+}
+
+.column.left>h1 {
+    display: inline-block;
+    width: 500px;
+    margin-top: 95px;
+}
+
+.column.left p {
+    display: inline-block;
+    width: 450px;
+    height: 200px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*---- DOOR ID -----*/
+#door {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/*---- BUS STOP ID ----*/
+#bus-stop {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/*---- CHALKBOARD ID ----*/
+#chalkboard {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/*---- ATTIC ID ----*/
+#attic {
+    position: absolute;
+    top: 0%;
+    left: 42%;
+    width: 200px; 
+    height: 300px; 
+    cursor: pointer;
+    z-index: 999;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*---- ATTIC PAGE ----*/
+body.attic-details {
+    background-color: #d5856f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+/*----- ATTIC EASTER EGG ------*/
+/*--- EASTER EGG ID ---*/
+#stoned-fox {
+    cursor: pointer;
+}
+
+.meme-box {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    border: 3px solid white;
+}
+
+.meme-image {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 350px;
+    border: 3px solid white;
+}
+
+.meme-box h1 {
+    margin-top: 20px;
+    font-size: 2em;
+    color: white;
+    text-shadow: none;
+}
+
+.meme-box p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: none;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*---- CHALKBOARD PAGE ----*/
+body.chalk-details {
+    background-color: #6f6e6c; 
+}
+
+/*---- CHALKBOARD BACK BUTTON ID ----*/
+#back-button-chalk {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*----- EVENT PAGE -----*/
+body.event-details {
+    background-color: whitesmoke;
+}
+
+.new-content {
+    text-align: center;
+    margin-top: 50px;
+    z-index: 999;
+}
+
+.new-content h1 {
+    font-size: 3rem;
+    color: #ff7a7a;
+    font-family: "Arvo", cursive;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-shadow: none;
+}
+
+.new-content p {
+    color: #ff7a7a;
+    font-size: 1.5rem;
+    font-family: "Arvo", serif;
+    margin: 10px 0;
+    text-shadow: none;
+}
+
+/*---- BACKWARDS BUTTON IMAGE ----*/
+.content-img {
+    display: inline-block;
+    width:150px;
+    height: 100px;
+    top: 0;
+}
+
+.container-img {
+    display: inline-block;
+    width:200;
+    height:100px;
+}
+
+/*---- BACK BUTTON ID -----*/
+#back-button {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/*----- MAP -----*/
+.map-content {
+    margin-top: 20px;
+    margin-left: 30%;
+}
+
+.map-content img {
+    border-radius: 10%;
+    border: 3px solid #ff7a7a;
+}
+
+/*---- SOCIAL MEDIA ----*/
+.icons {
+    height: 10px;
+    width: 500px;
+}
+
+.new-content.icons {
+    display: inline-flex;
+    justify-content: center;
+    margin-left:455px;
+    margin-top: 25px;
+}
+
+/*--- SOCIAL MEDIA ICON IDs ---*/
+#share-instagram {
+    height: 100px; 
+    width: 100px;
+    cursor: pointer;
+}
+
+#share-facebook {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* TWITTER */
+#share-whatsapp {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#share-link {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
