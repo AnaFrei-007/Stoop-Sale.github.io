@@ -106,9 +106,7 @@ function loadEventDetails() {
         </div>
 
         <div class = "map-content">
-            <a href= "https://www.google.com/maps/place/106+2nd+Pl,+Brooklyn,+NY+11231,+USA/@40.6792527,-73.999787,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a586719dc4b:0x523121d75a64632!8m2!3d40.6792487!4d-73.9972121!16s%2Fg%2F11csk_cgdg?entry=ttu"
-            target= "_blank">
-            <img src ="./assets/images/map.png" alt = "map screenshot"></a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.7603648763375!2d-73.9972121!3d40.6792487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a586719dc4b%3A0x523121d75a64632!2s106%202nd%20Pl%2C%20Brooklyn%2C%20NY%2011231%2C%20USA!5e0!3m2!1sen!2spt!4v1730279864666!5m2!1sen!2spt" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     `;
     
