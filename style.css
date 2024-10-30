@@ -259,10 +259,11 @@ body.event-details {
 /*----- MAP -----*/
 .map-content {
     margin-top: 20px;
-    margin-left: 30%;
+    margin-left: 35%;
+    overflow: hidden;
 }
 
-.map-content img {
+.map-content > iframe {
     border-radius: 10%;
     border: 3px solid #ff7a7a;
 }
